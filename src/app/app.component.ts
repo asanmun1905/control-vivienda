@@ -15,8 +15,20 @@ export class AppComponent {
   corrienteHab1: boolean = false;
   onClickCambiarCorriente() {
     this.corrienteVivienda = !this.corrienteVivienda;
+    if (!this.corrienteVivienda) {
+      this.corrienteHab1 = false;
+    }
   }
   onClickCambiarCorrienteHab1() {
-    this.corrienteHab1 = !this.corrienteHab1;
+    if (this.corrienteVivienda) {
+      this.corrienteHab1 = !this.corrienteHab1;
+    }
+    else {
+      this.corrienteHab1 = false;
+    }
+  }
+  estadoPersianaPadre = false;
+  onEstadoPersiana(estado: boolean) {
+    this.estadoPersianaPadre = estado;
   }
 }

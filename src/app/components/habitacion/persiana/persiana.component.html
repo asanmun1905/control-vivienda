@@ -1,1 +1,8 @@
-<p>persiana works!</p>
+<div>
+  <h1>{{ titulo }}</h1>
+</div>
+<span>Persiana id.: #1</span>
+<span>Estado: {{this.estadoPersiana ? 'ABIERTA' : 'BAJADA'}}</span>
+<button (click)="onClickCambiarEstadoPersiana()">
+  {{this.estadoPersiana ? 'Bajar' : 'Subir'}}
+</button>

@@ -1,1 +1,6 @@
-<p>habitacion works!</p>
+<div>
+  <h1>{{ titulo }}</h1>
+</div>
+<span>Habitación id.: #1</span>
+<span>Corriente: {{(this.corrienteHab1()) ? 'ON' : 'OFF'}}</span>
+<app-persiana [corrienteHab1]="corrienteHab1()" (estadoPersianaOutput)="onEstadoPersiana($event)"></app-persiana>
