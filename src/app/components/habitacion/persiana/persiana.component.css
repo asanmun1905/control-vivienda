@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+:host p {
+  margin: 0;
+}

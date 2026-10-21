@@ -1,0 +1,84 @@
+:host {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(48px, 10vh, 96px) 24px;
+}
+
+:host > div:first-child,
+:host > .botonCorriente,
+:host > span,
+:host > app-habitacion {
+  width: min(100%, 560px);
+}
+
+:host > div:first-child h1 {
+  margin: 0 0 28px;
+  color: var(--text);
+  font-size: clamp(26px, 5vw, 36px);
+  font-weight: 650;
+  letter-spacing: -1.2px;
+}
+
+.botonCorriente button {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--accent);
+  color: #29352a;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 150ms ease;
+}
+
+.botonCorriente button:hover {
+  background: #a8c69b;
+}
+
+.botonCorriente button:focus-visible {
+  outline: 3px solid rgb(109 139 103 / 30%);
+  outline-offset: 3px;
+}
+
+.botonCorrienteHab1 button {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--accent);
+  color: #29352a;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 150ms ease;
+}
+
+.botonCorrienteHab1 button:hover {
+  background: #a8c69b;
+}
+
+.botonCorrienteHab1 button:focus-visible {
+  outline: 3px solid rgb(109 139 103 / 30%);
+  outline-offset: 3px;
+}
+
+
+:host > span {
+  display: block;
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+:host > app-habitacion {
+  margin-top: 22px;
+}
